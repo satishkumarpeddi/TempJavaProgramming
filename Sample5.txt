@@ -1,1 +1,2 @@
-Hello this is demo of visualization of OuputStreamWriter inorder to load data into the file.
+Hello this is a demo of loading data into the file using PrintWriter.
+--> More Easier Compare to other stream's in character 
