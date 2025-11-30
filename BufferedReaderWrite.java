@@ -1,7 +1,7 @@
 import java.io.*;
 public class BufferedReaderWrite {
     public static void main(String[] args){
-        try(BufferedWriter bfw = new BufferedWriter(new FileWriter("samaple2.txt"))){
+        try(BufferedWriter bfw = new BufferedWriter(new FileWriter("sample2.txt"))){
             bfw.write("This is a demo of using bufferedwriter and bufferedreader");
             bfw.newLine();
             bfw.write("for faster implementation.");
