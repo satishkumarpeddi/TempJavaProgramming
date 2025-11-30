@@ -1,6 +1,10 @@
 class Counter{
     int count;
-    public void countMethod(){
+    //Race Method
+    // public void countMethod(){
+    //     count++;
+    // }
+    public synchronized void countMethod(){
         count++;
     }
 }
