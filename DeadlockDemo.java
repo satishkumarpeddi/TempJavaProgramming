@@ -5,11 +5,11 @@ public class DeadlockDemo {
         Thread t1 = new Thread(()->{
             synchronized(resource1){
                 System.out.println("Thread 1 locked Resource 1 ");
-                try{
-                    Thread.sleep(1000);
-                }catch(Exception e){
-                    e.printStackTrace();
-                }
+                // try{
+                //     Thread.sleep(1000);
+                // }catch(Exception e){
+                //     e.printStackTrace();
+                // }
                 synchronized(resource2){
                 System.out.println("Thread 1 locked Resource 2 ");
                 }
@@ -18,11 +18,11 @@ public class DeadlockDemo {
         Thread t2 = new Thread(()->{
             synchronized(resource2){
                 System.out.println("Thread 2 locked Resource 2 ");
-                try{
-                    Thread.sleep(1000);
-                }catch(Exception e){
-                    e.printStackTrace();
-                }
+                // try{
+                //     Thread.sleep(1000);
+                // }catch(Exception e){
+                //     e.printStackTrace();
+                // }
                 synchronized(resource2){
                 System.out.println("Thread 2 locked Resource 1 ");    
                 }
